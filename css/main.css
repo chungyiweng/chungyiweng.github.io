@@ -90,42 +90,38 @@ body
 #navigator
 {	
 	height: 40px;
-	background: rgb(75,46,131);
+	background: #F1F3F4;
 
-	-moz-box-shadow: 5px 5px 5px #777777;
-	-webkit-box-shadow: 5px 5px 5px #777777;
-	box-shadow: 5px 5px 5px #777777;
+	border-bottom: 2px solid #e0e0e0;
 	
-	text-align: center;
+	text-align: left;
 }
 
-#navigator ul
-{
-	width: 780px;
-	
-	margin: auto auto;
-	padding: 0px 0px;
-	
-	list-style: none;
+#navigator ul {
+  width: 800px;
+  margin: auto auto;
+  padding: 0px 0px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between; /* Pushes first item to far left and last item to far right */
+  align-items: center;
+  height: 100%;
 }
 
-#navigator ul li
-{
-	float: left;	
-	width: 130px;
-
-	padding-top: 10px;
+#navigator ul li {
+  /* Remove float and fixed width */
+  text-align: center;
 }
 
 #navigator a
 {
-	color: rgb(235, 235, 235);
+	color: #3C4043;
 	text-decoration: none;
 }
 
 #navigator  a:hover
 {
-	color: rgb(255, 255, 255);  
+	color: #3C4043;  
 	font-weight: bold;
 }
 
@@ -143,6 +139,12 @@ body
 	line-height: 1.1em;
 	
 	margin: 0px 16px auto;
+}
+
+#profile_image
+{
+    float: right;
+	width: 164px;
 }
 
 #profile_content
@@ -206,12 +208,6 @@ body
     font-size: 100%;
 }
 
-#profile_image
-{
-    float: right;
-	width: 196px;
-}
-
 #profile a
 {
 	color: rgb(75,46,131);
@@ -233,6 +229,10 @@ body
 {
     color: rgb(255, 115, 0);
 	font-weight:normal;
+}
+
+#profile_content p {
+  margin-bottom: 2px;
 }
 
 /*/////////////////////////////////////////////

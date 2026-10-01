@@ -31,12 +31,15 @@
 			</div>
 
 			<div id = "profile_content_description">
-			Research Scientsit <br/>
-            Google <br/>
 			<br/>
-			Email: lowercase_fullname (*-at-*) google.com <br/>
-			<a href="files/resume.pdf" class="special_link">Resume</a>
-			<a href="https://scholar.google.com/citations?user=giBLsYgAAAAJ&hl=en" class="special_link">Google Scholar </a>
+			<p>Research Scientist</p>
+            <p>Google</p>
+			<br/>
+			<p>Email: <a href="#" id="email-link" class="special_link" onclick="sendEmail(); return false;">chungyiweng [at] gmail.com</a></p>
+			<p>
+				<a href="files/resume.pdf" class="special_link">Resume</a>
+				<a href="https://scholar.google.com/citations?user=giBLsYgAAAAJ&hl=en" class="special_link">Google Scholar </a>
+			<p>
 			</div>
 		</div>
 		
@@ -656,6 +659,15 @@
 	</div>
 	
 </div>
+
+<script>
+  function sendEmail() {
+    const user = "chungyiweng";
+    const domain = "gmail.com";
+    window.location.href = "mailto:" + user + "@" + domain;
+  }
+</script>
+
 </body>
 
 </html>
